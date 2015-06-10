@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/game_bg_cream"
+    android:gravity="center"
+    android:padding="20dip" >
+
+    <corp.seedling.seven.letters.ui.CustomTextViewSettings
+        android:id="@+id/tv_sett_music"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="@dimen/tv_height"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dip"
+        android:background="@drawable/circle_settings_music" />
+
+    <corp.seedling.seven.letters.ui.CustomTextViewHeading
+        android:id="@+id/tv_sett_music_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sett_music"
+        android:layout_marginBottom="20dip"
+        android:text="Music" />
+
+    <corp.seedling.seven.letters.ui.CustomTextViewSettings
+        android:id="@+id/tv_sett_sfx"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="@dimen/tv_height"
+        android:layout_below="@id/tv_sett_music_text"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dip"
+        android:background="@drawable/circle_yellow"
+        android:text="ON" />
+
+    <corp.seedling.seven.letters.ui.CustomTextViewHeading
+        android:id="@+id/tv_sett_sfx_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sett_sfx"
+        android:text="SFX" />
+
+</RelativeLayout>

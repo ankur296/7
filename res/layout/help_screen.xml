@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_game_screen_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E3D7"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lay_word_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_word1_help"
+            android:layout_width="@dimen/tv_width"
+            android:layout_height="@dimen/tv_height"
+            android:layout_margin="@dimen/tv_margin_ans"
+            android:background="@drawable/circle_white" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_word2_help"
+            android:layout_width="@dimen/tv_width"
+            android:layout_height="@dimen/tv_height"
+            android:layout_margin="@dimen/tv_margin_ans"
+            android:layout_toRightOf="@id/tv_word1_help"
+            android:background="@drawable/circle_white" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_word3_help"
+            android:layout_width="@dimen/tv_width"
+            android:layout_height="@dimen/tv_height"
+            android:layout_margin="@dimen/tv_margin_ans"
+            android:layout_toRightOf="@id/tv_word2_help"
+            android:background="@drawable/circle_white" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_word4_help"
+            android:layout_width="@dimen/tv_width"
+            android:layout_height="@dimen/tv_height"
+            android:layout_margin="@dimen/tv_margin_ans"
+            android:layout_toRightOf="@id/tv_word3_help"
+            android:background="@drawable/circle_white" />
+
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_progress_help"
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_below="@id/lay_word_help"
+        android:layout_margin="5dip"
+        android:background="@drawable/progress_bg"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/progressBarToday_help"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/rectangular_progress_bar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_seven_outer_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_progress_help"
+        android:layout_centerInParent="true"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:padding="2dip" >
+
+        <RelativeLayout
+            android:id="@+id/lay_seven_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/test0_help"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_margin="@dimen/tv_margin"
+                android:background="@drawable/circle_pink_light" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/test1_help"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_margin="@dimen/tv_margin"
+                android:layout_toRightOf="@id/test0_help"
+                android:background="@drawable/circle_pink_light" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/test2_help"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_margin="@dimen/tv_margin"
+                android:layout_toRightOf="@id/test1_help"
+                android:background="@drawable/circle_pink_light" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/test3_help"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_below="@id/test2_help"
+                android:layout_marginLeft="110dip"
+                android:background="@drawable/circle_pink_light" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/test4_help"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_below="@id/test3_help"
+                android:layout_marginLeft="90dip"
+                android:background="@drawable/circle_pink_light" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/test5_help"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_below="@id/test4_help"
+                android:layout_marginLeft="70dip"
+                android:background="@drawable/circle_pink_light" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/test6_help"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_below="@id/test5_help"
+                android:layout_marginLeft="50dip"
+                android:background="@drawable/circle_pink_light" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_antonym_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_seven_outer_help"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_anto1_help"
+            android:layout_width="@dimen/tv_width"
+            android:layout_height="@dimen/tv_height"
+            android:layout_margin="@dimen/tv_margin_ans"
+            android:background="@drawable/circle_white" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_anto2_help"
+            android:layout_width="@dimen/tv_width"
+            android:layout_height="@dimen/tv_height"
+            android:layout_margin="@dimen/tv_margin_ans"
+            android:layout_toRightOf="@id/tv_anto1_help"
+            android:background="@drawable/circle_white" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_anto3_help"
+            android:layout_width="@dimen/tv_width"
+            android:layout_height="@dimen/tv_height"
+            android:layout_margin="@dimen/tv_margin_ans"
+            android:layout_toRightOf="@id/tv_anto2_help"
+            android:background="@drawable/circle_white" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_anto4_help"
+            android:layout_width="@dimen/tv_width"
+            android:layout_height="@dimen/tv_height"
+            android:layout_margin="@dimen/tv_margin_ans"
+            android:layout_toRightOf="@id/tv_anto3_help"
+            android:background="@drawable/circle_white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_text_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_antonym_help"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <corp.seedling.seven.letters.ui.CustomTextViewHelp
+            android:id="@+id/tv_text_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+         <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_help_next"
+            android:layout_width="@dimen/tv_width"
+            android:layout_height="@dimen/tv_height"
+            android:layout_margin="@dimen/tv_margin_ans"
+            android:layout_toRightOf="@id/tv_text_help"
+            android:background="@drawable/circle_next" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+<string name="leaderboard_7_letters">CgkI2OiZuqEWEAIQAQ</string>
+
+  <string name="app_id">764894671960</string>
+  <string name="achievement_word_adept">CgkI2OiZuqEWEAIQAg</string>
+  <string name="achievement_quite_wordly">CgkI2OiZuqEWEAIQAw</string>
+  <string name="achievement_word_gifted">CgkI2OiZuqEWEAIQBA</string>
+  <string name="achievement_word_whiz">CgkI2OiZuqEWEAIQBQ</string>
+  <string name="achievement_fast_fingers">CgkI2OiZuqEWEAIQBg</string>
+  <string name="achievement_word_sensation">CgkI2OiZuqEWEAIQBw</string>
+  <string name="achievement_word_book">CgkI2OiZuqEWEAIQCA</string>
+  <string name="achievement_word_perfect">CgkI2OiZuqEWEAIQCQ</string>
+  <string name="achievement_defeat_dictionary">CgkI2OiZuqEWEAIQCg</string>
+  <string name="achievement_human_lexicon">CgkI2OiZuqEWEAIQCw</string>
+  <string name="leaderboard_wannabe_human_lexicons">CgkI2OiZuqEWEAIQAQ</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/game_bg_cream"
+    android:gravity="center"
+    android:padding="20dip" >
+
+    <corp.seedling.seven.letters.ui.CustomTextView
+        android:id="@+id/tv_sett_leader"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="@dimen/tv_height"
+        android:layout_margin="5dip"
+        android:background="@drawable/circle_leaderboard" />
+
+    <corp.seedling.seven.letters.ui.CustomTextViewHeading
+        android:id="@+id/tv_sett_leader_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sett_leader"
+        android:text="Compare your score\nwith other players!"
+        android:layout_marginBottom="20dip"
+         />
+
+    <corp.seedling.seven.letters.ui.CustomTextView
+        android:id="@+id/tv_sett_achieve"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="@dimen/tv_height"
+        android:layout_margin="5dip"
+        android:layout_below="@id/tv_sett_leader_text"
+        android:background="@drawable/circle_achievements" />
+
+    <corp.seedling.seven.letters.ui.CustomTextViewHeading
+        android:id="@+id/tv_sett_achieve_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sett_achieve"
+        android:text="Check out the Achievements\nyou unlocked!"
+        />
+
+</RelativeLayout>

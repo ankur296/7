@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="Animation">
+    <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+    <item name="android:windowExitAnimation">@anim/zoom_out</item>
+</style>
+
+</resources>

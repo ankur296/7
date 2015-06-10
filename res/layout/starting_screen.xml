@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_start_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e94c3d"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/lay_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dip"
+        android:gravity="center" >
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_play"
+            android:layout_width="@dimen/tv_width_starting_screen"
+            android:layout_height="@dimen/tv_height_starting_screen"
+            android:layout_margin="@dimen/tv_margin"
+            android:visibility="invisible" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_help"
+            android:layout_width="@dimen/tv_width_starting_screen"
+            android:layout_height="@dimen/tv_height_starting_screen"
+            android:layout_margin="@dimen/tv_margin"
+            android:layout_toRightOf="@id/tv_play"
+            android:visibility="invisible" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_music"
+           android:layout_width="@dimen/tv_width_starting_screen"
+            android:layout_height="@dimen/tv_height_starting_screen"
+            android:layout_margin="@dimen/tv_margin"
+            android:layout_toRightOf="@id/tv_help"
+            android:visibility="invisible" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_share"
+            android:layout_width="@dimen/tv_width_starting_screen"
+            android:layout_height="@dimen/tv_height_starting_screen"
+            android:layout_below="@id/tv_music"
+            android:layout_marginLeft="120dip"
+            android:visibility="invisible" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_rate"
+           android:layout_width="@dimen/tv_width_starting_screen"
+            android:layout_height="@dimen/tv_height_starting_screen"
+            android:layout_below="@id/tv_share"
+            android:layout_marginLeft="100dip"
+            android:layout_marginTop="@dimen/tv_margin"
+            
+            android:visibility="invisible" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_googleplayservices"
+            android:layout_width="@dimen/tv_width_starting_screen"
+            android:layout_height="@dimen/tv_height_starting_screen"
+            android:layout_below="@id/tv_rate"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="@dimen/tv_margin"
+            android:visibility="invisible" />
+
+        <corp.seedling.seven.letters.ui.CustomTextView
+            android:id="@+id/tv_crosspromo"
+          android:layout_width="@dimen/tv_width_starting_screen"
+            android:layout_height="@dimen/tv_height_starting_screen"
+            android:layout_below="@id/tv_googleplayservices"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="@dimen/tv_margin"
+            android:visibility="invisible"
+             />
+        
+        <TextView 
+            android:id="@+id/tv_letters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_crosspromo"
+            android:layout_below="@id/tv_googleplayservices"
+            android:layout_marginTop="35dip"
+            android:text="Letters ..."
+            android:textSize="35sp"
+            android:textColor="#fcb22b" 
+            
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_game_over_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E3D7"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay_parent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="200dip"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dip"
+            android:background="#5b717c" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_word1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/tv_word11"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_margin="@dimen/tv_margin_ans"
+                android:background="@drawable/circle_red"
+                android:visibility="invisible" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/tv_word12"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_margin="@dimen/tv_margin_ans"
+                android:background="@drawable/circle_red"
+                android:visibility="invisible" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/tv_word13"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_margin="@dimen/tv_margin_ans"
+                android:background="@drawable/circle_red"
+                android:visibility="invisible" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/tv_word14"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_margin="@dimen/tv_margin_ans"
+                android:background="@drawable/circle_red"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_word2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/tv_word21"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_margin="@dimen/tv_margin_ans"
+                android:background="@drawable/circle_red"
+                android:visibility="invisible" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/tv_word22"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_margin="@dimen/tv_margin_ans"
+                android:background="@drawable/circle_red"
+                android:visibility="invisible" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/tv_word23"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_margin="@dimen/tv_margin_ans"
+                android:background="@drawable/circle_red"
+                android:visibility="invisible" />
+
+            <corp.seedling.seven.letters.ui.CustomTextView
+                android:id="@+id/tv_word24"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:layout_margin="@dimen/tv_margin_ans"
+                android:background="@drawable/circle_red"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="200dip"
+            android:layout_height="1dip"
+            android:layout_below="@id/lay_word2"
+            android:background="#5b717c" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_parent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_weight="4"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lay_panel1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lay_score_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <corp.seedling.seven.letters.ui.CustomTextViewOver
+                    android:id="@+id/tv_score"
+                    android:layout_width="@dimen/tv_width_gameover_screen"
+                    android:layout_height="@dimen/tv_height_gameover_screen"
+                    android:layout_margin="@dimen/tv_margin_ans"
+                    android:background="@drawable/circle_yellow"
+                    android:text="13" />
+
+                <corp.seedling.seven.letters.ui.CustomTextViewHeading
+                    android:id="@+id/tv_score_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Score" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_highscore_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <corp.seedling.seven.letters.ui.CustomTextViewOver
+                    android:id="@+id/tv_high_score"
+                    android:layout_width="@dimen/tv_width_gameover_screen"
+                    android:layout_height="@dimen/tv_height_gameover_screen"
+                    android:layout_margin="@dimen/tv_margin_ans"
+                    android:background="@drawable/circle_yellow"
+                    android:text="34" />
+
+                <corp.seedling.seven.letters.ui.CustomTextViewHeading
+                    android:id="@+id/tv_high_score_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Best" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_leaderboard_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <corp.seedling.seven.letters.ui.CustomTextViewOver
+                    android:id="@+id/tv_leaderboard"
+                    android:layout_width="@dimen/tv_width_gameover_screen"
+                    android:layout_height="@dimen/tv_height_gameover_screen"
+                    android:layout_margin="@dimen/tv_margin_ans"
+                    android:background="@drawable/circle_leaderboard" />
+
+                <corp.seedling.seven.letters.ui.CustomTextViewHeading
+                    android:id="@+id/tv_leaderboard_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Top Scorers" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_panel2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lay_restart_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <corp.seedling.seven.letters.ui.CustomTextViewOver
+                    android:id="@+id/tv_restart"
+                    android:layout_width="@dimen/tv_width_gameover_screen"
+                    android:layout_height="@dimen/tv_height_gameover_screen"
+                    android:layout_margin="@dimen/tv_margin_ans"
+                    android:background="@drawable/circle_play" />
+
+                <corp.seedling.seven.letters.ui.CustomTextViewHeading
+                    android:id="@+id/tv_restart_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Play Again" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_dict_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <corp.seedling.seven.letters.ui.CustomTextViewOver
+                    android:id="@+id/tv_dict"
+                    android:layout_width="@dimen/tv_width_gameover_screen"
+                    android:layout_height="@dimen/tv_height_gameover_screen"
+                    android:layout_margin="@dimen/tv_margin_ans"
+                    android:background="@drawable/circle_yellow"
+                    android:text="0%" />
+
+                <corp.seedling.seven.letters.ui.CustomTextViewHeading
+                    android:id="@+id/tv_dict_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Dictionary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_achieve_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <corp.seedling.seven.letters.ui.CustomTextViewOver
+                    android:id="@+id/tv_achieve"
+                    android:layout_width="@dimen/tv_width_gameover_screen"
+                    android:layout_height="@dimen/tv_height_gameover_screen"
+                    android:layout_margin="@dimen/tv_margin_ans"
+                    android:background="@drawable/circle_achievements" />
+
+                <corp.seedling.seven.letters.ui.CustomTextViewHeading
+                    android:id="@+id/tv_achieve_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Achievements" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
